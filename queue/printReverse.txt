@@ -1,0 +1,16 @@
+
+void CQue::printReverse()
+{
+    cout << setw(20) << count << ":";
+    int ind = last;
+    
+    for (int i = 1; i <= count; i++)
+    {
+        if(ind<0){
+            ind = MAX-1;
+        }
+        cout << que[ind] << " ";
+        ind = ind-1;
+        cout << endl;
+    }
+}
